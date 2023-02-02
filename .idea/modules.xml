@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lek01_Rekursion/Lek01_Opgaver/Lek01_Opgaver.iml" filepath="$PROJECT_DIR$/Lek01_Rekursion/Lek01_Opgaver/Lek01_Opgaver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek01_Rekursion/Lek01_Rekursion.iml" filepath="$PROJECT_DIR$/Lek01_Rekursion/Lek01_Rekursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek02_Rekursion2/Lek02_Opgaver/Lek02_Opgaver.iml" filepath="$PROJECT_DIR$/Lek02_Rekursion2/Lek02_Opgaver/Lek02_Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek02_Rekursion2/Lek02_Rekursion2.iml" filepath="$PROJECT_DIR$/Lek02_Rekursion2/Lek02_Rekursion2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Programmering-2.iml" filepath="$PROJECT_DIR$/Programmering-2.iml" />
     </modules>
   </component>
