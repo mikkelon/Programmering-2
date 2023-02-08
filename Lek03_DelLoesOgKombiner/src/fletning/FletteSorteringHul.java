@@ -1,5 +1,7 @@
 package fletning;
 
+import com.sun.tools.javac.Main;
+
 import java.util.ArrayList;
 
 public class FletteSorteringHul {
@@ -22,7 +24,31 @@ public class FletteSorteringHul {
 	// kombiner er realiseret ved fletteskabelonen
 	private void merge(ArrayList<Integer> list, int low, int middle, int high) {
 		ArrayList<Integer> temp = new ArrayList<Integer>();
-		// TODO
-	}
+		int i1 = low;
+		int i2 = middle + 1;
 
+		while (i1 <= middle && i2 <= high) {
+			if (list.get(i1) < list.get(i2)) {
+				temp.add(list.get(i1));
+				i1++;
+			} else {
+				temp.add(list.get(i2));
+				i2++;
+			}
+		}
+
+		while (i1 <= middle) {
+			temp.add(list.get(i1));
+			i1++;
+		}
+
+		while (i2 <= high) {
+			temp.add(list.get(i2));
+			i2++;
+		}
+
+		for (int i = 0; i < temp.size(); i++) {
+			list.set(low + i, temp.get(i));
+		}
+	}
 }
