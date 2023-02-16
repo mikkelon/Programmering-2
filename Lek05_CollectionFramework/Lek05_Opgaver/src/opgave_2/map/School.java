@@ -61,10 +61,7 @@ public class School {
      * @return
      */
     public Student findStudent(int id) {
-        if (students.containsKey(id)) {
-            return students.get(id);
-        }
-        return null;
+        return students.get(id);
     }
 
     public String toString() {
