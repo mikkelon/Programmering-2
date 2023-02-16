@@ -17,5 +17,30 @@ public class Ex2 {
 		System.out.println(runners);
 		System.out.println();
 
+		// a) Udskriv en linje for hver løber med name og lapTime ved at bruge List.forEach()
+		// metoden med en Consumer lambda.
+		System.out.println("a)");
+		runners.forEach(runner -> System.out.println(runner.getName() + ": " + runner.getLapTime() + "s"));
+		System.out.println();
+
+		// b) Som a), men udskriv kun løberne med lapTime < 30.
+		System.out.println("b)");
+		runners.forEach(runner -> opgaveB(runner));
+		System.out.println();
+
+		// c) Sorter løberne stigende efter lapTime ved at bruge List.sort() metoden med en
+		// Comparator lambda. Udskriv løberne.
+		System.out.println("c)");
+		runners.sort((r1, r2) -> r1.getLapTime() - r2.getLapTime());
+		runners.forEach(runner -> System.out.println(runner.getName() + ": " + runner.getLapTime() + "s"));
+		System.out.println();
+
 	}
+
+	private static void opgaveB(Runner runner) {
+		if (runner.getLapTime() < 30) {
+			System.out.println(runner.getName() + ": " + runner.getLapTime() + "s");
+		}
+	}
+
 }
