@@ -18,8 +18,8 @@ public class Main {
         System.out.println(countDelStrengA(list, "ens"));
         System.out.println();
 
-        System.out.println(countDelStrengB(list, "sen"));
-        System.out.println(countDelStrengB(list, "ens"));
+//        System.out.println(countDelStrengB(list, "sen"));
+//        System.out.println(countDelStrengB(list, "ens"));
     }
 
     // iterativ metode
@@ -37,19 +37,19 @@ public class Main {
     }
 
     // rekursiv metode
-    public static int countDelStrengB(List<String> list, String sub) {
-        for (String s : list) {
-
-        }
-    }
-
-    public static int countDelStrengB(String s, String sub, int index) {
-        if (index == s.length() - sub.length()) {
-            if (s.equalsIgnoreCase(sub)) return 1;
-        } else if (index <= s.length() - sub.length()) {
-            return 0;
-        } else {
-            return countDelStrengB(s.substring(index, index + sub.length()), sub, index + 1);
-        }
-    }
+//    public static int countDelStrengB(List<String> list, String sub) {
+//        for (String s : list) {
+//
+//        }
+//    }
+//
+//    public static int countDelStrengB(String s, String sub, int index) {
+//        if (index == s.length() - sub.length()) {
+//            if (s.equalsIgnoreCase(sub)) return 1;
+//        } else if (index <= s.length() - sub.length()) {
+//            return 0;
+//        } else {
+//            return countDelStrengB(s.substring(index, index + sub.length()), sub, index + 1);
+//        }
+//    }
 }
