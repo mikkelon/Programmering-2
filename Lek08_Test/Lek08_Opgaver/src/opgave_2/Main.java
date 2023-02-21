@@ -3,10 +3,6 @@ package opgave_2;
 import java.time.LocalDate;
 
 public class Main {
-    public static void main(String[] args) {
-
-    }
-
     /**
      * Returnerer størrelsen af bøden beregnet i henhold til skemaet
      * ovenfor
@@ -16,7 +12,7 @@ public class Main {
      * faktiskDato er den dag bogen blev afleveret; voksen er
      * sand, hvis det er en voksen og falsk ellers)
      **/
-    public int beregnBøde(LocalDate beregnetDato, LocalDate faktiskDato, boolean voksen) {
+    public static int beregnBøde(LocalDate beregnetDato, LocalDate faktiskDato, boolean voksen) {
         int daysBetween = (int) (faktiskDato.toEpochDay() - beregnetDato.toEpochDay());
 
         if (daysBetween == 0) return 0;
