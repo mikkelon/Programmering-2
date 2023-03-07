@@ -1,0 +1,18 @@
+#--- Hvad er det for et problem Singleton Pattern løser? ---#
+Med et Singleton pattern kan der kun oprettes en instans af en klasse ad gangen.
+
+#--- Beskriv hvordan Singleton Pattern implementeres i praksis ---#
+Dette gøres ved at lave en statisk attribut, der holder styr på, om der er oprettet en instans af klassen eller ej.
+Derudover gøres constructoren privat, så constructoren skal kaldes igennem en statisk metode på klassen. Her kan der så
+indsættes et tjek for, om der allerede er oprettet en instans af klassen.
+
+
+
+#--- Hvad er formålet med Adapter Pattern? ---#
+At oversætte metoder mellem to ikke-kompatible klasser.
+
+#--- Beskriv hvilke dele Adapter Pattern består af, og hvordan sammenhængen er mellem disse. ---#
+Adapteren består af en link-attribut til det objekt, der skal adapteres samt oversættelses metoder imellem de to objekter,
+der skal kunne forstå hinanden.
+
+#---  Formuler Adapter Pattern med egne ord. ---#

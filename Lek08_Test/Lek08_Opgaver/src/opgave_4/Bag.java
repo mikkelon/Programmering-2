@@ -3,9 +3,9 @@ package opgave_4;
 import java.util.HashMap;
 
 public interface Bag extends Iterable<String>{
-    public void add(String s);
+    void add(String s);
 
-    public void remove(String s);
+    void remove(String s);
 
-    public int getCount(String s);
+    int getCount(String s);
 }

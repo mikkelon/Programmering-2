@@ -6,8 +6,8 @@ import java.util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BagClassTest {
-    private Bag bag = new BagClass();
+class BagHashMapTest {
+    private Bag bag = new BagHashMap();
 
     @Test
     void add() {
